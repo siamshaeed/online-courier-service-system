@@ -1,0 +1,158 @@
+/**
+create table user_registration
+*/
+create table user_registration(
+	user_id 	INT NOT NULL AUTO_INCREMENT,
+	user_email 	varchar(255),
+	fname 		varchar(255),
+	lname		varchar(255),
+	user_name 	varchar(255),
+	address 	varchar(255),
+	gender		varchar(255),
+	date_of_birth varchar(255),
+	mobile varchar(255),
+	confirm_pass varchar(255),
+	PRIMARY KEY (user_id));
+
+
+/**
+create table courier_info
+*/
+create table courier_info(
+	courier_id 	INT NOT NULL AUTO_INCREMENT,
+	courier_admin_email varchar(255),
+	company_name 		varchar(255),
+	author_name		varchar(255),
+	address 	varchar(255),
+	mobile varchar(255),
+	confirm_pass varchar(255),
+	PRIMARY KEY (courier_id));
+
+
+/**
+create table Admin
+*/
+create table Admin(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	admin_email 	varchar(255),
+	fname 			varchar(255),
+	lname			varchar(255),
+	address 		varchar(255),
+	date_of_birth 	varchar(255),
+	mobile 			varchar(255),
+	confirm_pass 	varchar(255),
+	PRIMARY KEY (id));
+
+
+/**
+create table Division
+*/
+create table Division(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	division_id 	INT,
+	division_name 	varchar(255),
+	PRIMARY KEY (id));
+
+/**
+create table District
+*/
+create table District(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	division_id		INT,
+	district_id 	INT,
+	district_name 	varchar(255),
+	PRIMARY KEY (id));	
+
+/**
+create table upazila
+*/
+create table upazila(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	division_id		INT,
+	district_id 	INT,
+	upazila_id 		INT,
+	upazila_name 	varchar(255),
+	PRIMARY KEY (id));
+
+/**
+create table parcelDetails
+*/
+create table parcelDetails(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	courier_id		INT,
+	fromDivId	 	INT,
+	fromDisId 		INT,
+	fromUzlaId	 	INT,
+	toDivId	 		INT,
+	toDisId		 	INT,
+	toUzlaId	 	INT,
+	serviceType		varchar(50),
+	parcelType		varchar(50),
+	PRIMARY KEY (id));
+
+
+/**
+create table parcelWeight
+*/
+create table parcelWeight(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	weight			varchar(255),
+	PRIMARY KEY (id));
+
+
+/**
+create table contact
+*/
+create table contact(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	name         	varchar(255),
+	email 			varchar(255),
+	phone			varchar(255),
+	company 		varchar(255),
+	message 	    varchar(255),
+	PRIMARY KEY (id));
+
+
+/**
+create table userOrder
+*/
+create table userOrder(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	user_id			INT,
+	fname           varchar(255),	
+	lname           varchar(255),	
+	email           varchar(255),	
+	phone           varchar(255),	
+	address           varchar(255),	
+
+	courier_id		INT,
+
+	fromDivId	 	INT,
+	fromDisId 		INT,
+	fromUzlaId	 	INT,
+	fromBranchId	INT,
+
+	toDivId	 		INT,
+	toDisId		 	INT,
+	toUzlaId	 	INT,
+	toBranchId	 	INT,
+
+	serviceType		varchar(50),
+	parcelType		varchar(50),
+	parcel_weight	varchar(50),
+	payment_type    varchar(50),
+	PRIMARY KEY (id));
+
+
+/**
+create table parcentage
+*/
+create table parcentage(
+	id 	INT NOT NULL AUTO_INCREMENT,
+	user_id 		varchar(255),
+	date 			varchar(255),
+	cost			varchar(255),
+	courier_id 		varchar(255),
+	PRIMARY KEY (id));
+
+https://jqueryvalidation.org/

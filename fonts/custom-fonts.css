@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'siyam_rupaliregular';
+    src: url('siyamrupali/siyamrupali_1_01-webfont.woff2') format('woff2'),
+         url('siyamrupali/siyamrupali_1_01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solaimanlipinormal';
+    src: url('solaimanlipi/solaimanlipi_29-05-06-webfont.woff2') format('woff2'),
+         url('solaimanlipi/solaimanlipi_29-05-06-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**
+dashboard css fonts
+*/
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('OpenSansRegular/OpenSansRegular.eot');
+    src: url('OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'),
+         url('OpenSansRegular/OpenSansRegular.woff2') format('woff2'),
+         url('OpenSansRegular/OpenSansRegular.woff') format('woff'),
+         url('OpenSansRegular/OpenSansRegular.ttf') format('truetype'),
+         url('OpenSansRegular/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Bold';
+    src: url('RobotoCondensed-Bold/RobotoCondensed-Bold.eot');
+    src: url('RobotoCondensed-Bold/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RobotoCondensed-Bold/RobotoCondensed-Bold.woff') format('woff'),
+        url('RobotoCondensed-Bold/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('RobotoCondensed-Regular/RobotoCondensed-Regular.eot');
+    src: url('RobotoCondensed-Regular/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RobotoCondensed-Regular/RobotoCondensed-Regular.woff') format('woff'),
+        url('RobotoCondensed-Regular/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
