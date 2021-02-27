@@ -5,7 +5,7 @@
 						<p>&copy;All Right Reserved 2017</p>
 					</div>
 					<div class="col-md-6">
-						<p>Deloped by <a href="#">DIU</a></p>
+						<p>Deloped by <a href="https://github.com/siamshaeed/">siamshaeed</a></p>
 					</div>
 				</div>				
 			</div>
