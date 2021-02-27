@@ -2,7 +2,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<p>&copy;All Right Reserved 2017</p>
+						<p>&copy;All Right Reserved 2021</p>
 					</div>
 					<div class="col-md-6">
 						<p>Deloped by <a href="https://github.com/siamshaeed/">siamshaeed</a></p>
